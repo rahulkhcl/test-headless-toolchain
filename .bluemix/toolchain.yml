@@ -6,7 +6,7 @@ required:
  - repo
 
 toolchain:
-  name: trice-node-web-kube-noservices
+  name: trice-node-web-{{timestamp}}
 
 # Github repos
 repo:
