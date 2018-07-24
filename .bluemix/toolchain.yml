@@ -32,6 +32,7 @@ build:
       CF_SPACE: "{{deploy.parameters.dev-space}}"
       CF_ORGANIZATION: "{{deploy.parameters.dev-organization}}"
       REGION_ID: "{{deploy.parameters.dev-region}}"
+      API_KEY: "{{form.pipeline.parameters.api-key}}"
      execute: true
     services: ["repo"]
   hidden: ["form"]
@@ -50,3 +51,4 @@ deploy:
     dev-space: "{{space}}"
     dev-organization: "{{organization}}"
     dev-region: "{{region}}"
+    api-key: "{{apiKey}}"
