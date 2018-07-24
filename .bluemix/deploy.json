@@ -19,41 +19,11 @@
     "app-name": {
       "description": "app name",
       "type": "string"
+    },
+    "app-key": {
+      "description": "IAM api key",
+      "type": "string"
     }
   },
-  "required": ["dev-region", "dev-organization", "dev-space", "app-name"],
-  "form": [{
-    "type": "validator",
-    "url": "/devops/setup/bm-helper/helper.html"
-  },
-  {
-    "type": "text",
-    "readonly": false,
-    "title": "App Name",
-    "key": "app-name"
-  }, {
-    "type": "table",
-    "columnCount": 3,
-    "widths": ["28%", "28%", "28%"],
-    "items": [{
-      "type": "label",
-      "title": "Region"
-    }, {
-      "type": "label",
-      "title": "Organization"
-    }, {
-      "type": "label",
-      "title": "Space"
-    }, {
-      "type": "select",
-      "key": "dev-region"
-    }, {
-      "type": "select",
-      "key": "dev-organization"
-    }, {
-      "type": "select",
-      "key": "dev-space",
-      "readonly": false
-    }]
-  }]
+  "required": ["dev-region", "dev-organization", "dev-space", "app-name", "api-key"]
 }
