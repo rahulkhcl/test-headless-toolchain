@@ -6,7 +6,7 @@ required:
  - repo
 
 toolchain:
-  name: trice-node-web-{{timestamp}}
+  name: tc-rnodecloudant
 
 # Github repos
 repo:
@@ -47,7 +47,7 @@ deploy:
     $ref: deploy.json
   service-category: pipeline
   parameters:
-    app-name: trice-node-web-kube-noservices
+    app-name: rnodecloudant
     dev-space: "{{space}}"
     dev-organization: "{{organization}}"
     dev-region: "{{region}}"
