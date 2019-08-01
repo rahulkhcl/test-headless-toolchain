@@ -48,7 +48,10 @@ deploy:
   service-category: pipeline
   parameters:
     app-name: rnodecloudant
-    dev-space: "{{space}}"
-    dev-organization: "{{organization}}"
-    dev-region: "{{region}}"
+    #dev-space: "{{space}}"
+    #dev-organization: "{{organization}}"
+    #dev-region: "{{region}}"
+    dev-space: "{{spaceGuid}}"
+    dev-organization: "{{orgGuid}}"
+    dev-region: "{{regionGuid}}"
     api-key: "{{apiKey}}"
