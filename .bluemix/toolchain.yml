@@ -12,8 +12,10 @@ toolchain:
 repo:
   service_id: hostedgit
   parameters:
-    repo_url: "{{#zip_url}}{{zip_url}}{{/zip_url}}{{^zip_url}}{{repository}}{{/zip_url}}"
-    repo_name: "{{toolchain.name}}"
+    #repo_url: "{{#zip_url}}{{zip_url}}{{/zip_url}}{{^zip_url}}{{repository}}{{/zip_url}}"
+    repo_url: "{{deploy.parameters.repourl}}"
+    #repo_name: "{{toolchain.name}}"
+    repo_name: "{{deploy.parameters.reponame}}"
     type: clone
     has_issues: true
     enable_traceability: true
@@ -55,3 +57,5 @@ deploy:
     dev-organization: "{{orgGuid}}"
     dev-region: "{{regionGuid}}"
     api-key: "{{apiKey}}"
+    repourl: "{{repourl}}"
+    reponame: "{{reponame}}"
